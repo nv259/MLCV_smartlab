@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SmartLab</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div id="header">
+</div>
+
+<div id="content">
+    <!--    left-camera-->
+    <div id="left-camera">
+        <div class="camera">
+            <img src="{{ url_for('left_camera') }}">
+        </div>
+        <div class="statement">
+            {{ url_for('statement') }}
+            <li>Persons: </li>
+            <li>Monitors: </li>
+            <li>Mouses: </li>
+            <li>Keyboards: </li>
+        </div>
+    </div>
+    <!--    right-camera-->
+    <div id="right-camera">
+        <div class="camera">
+<!--            <img src="{{ url_for('right_camera') }}">-->
+        </div>
+        <div class="statement">
+            <li>Persons: </li>
+            <li>Monitors: </li>
+            <li>Mouses: </li>
+            <li>Keyboards: </li>
+        </div>
+    </div>
+</div>
+
+<div id="footer"></div>
+</body>
+</html>

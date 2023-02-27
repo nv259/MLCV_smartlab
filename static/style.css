@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.clear {
+    clear: both;
+}
+
+.camera {
+    width: fit-content;
+    background: beige;
+    float: left;
+    margin: 5px 0px;
+}
+
+.statement {
+    float: right;
+    flex: auto;
+    width: 10%;
+    height: 45%;
+    border-style: solid;
+    border-width: 1px;
+}

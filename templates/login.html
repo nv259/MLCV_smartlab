@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title> 
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../../web-the-band-back-end/assets/css/register_style.css">
+        <link rel="stylesheet" href="../../web-the-band-back-end/assets/fonts/themify-icons/themify-icons.css">
+    </head>
+
+    <body>
+        <div id="header">
+            <i class="ti-face-smile logo"></i>
+            <p class="register-line"> Login </p>
+            <a href="#" class="need-help">Need help?</a>
+        </div>
+
+        <div id="content">
+            <div class="register-wrap">
+                <div class="register-content">
+                    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" class="register-form" method="post">
+                        <h2 class="sign-up"> Sign In </h2>
+                        <p class="require-text"> 
+                            Please fill your credentials to login
+                            <br>
+                            <br>
+                            Username
+                        </p>
+                        <input type="text" name="username" id="" required value=""/> 
+                        <p> Password </p>
+                        <input type="password" name="password" id="" required />
+                        <button type="submit" class="submit-btn btn"> Login </button>
+                        <span style="color: red;"> <?php echo $login_error ?> </span>
+                        <p style="margin-bottom: 30px"> 
+                            <br>
+                            Don't have an account? <a href="../../web-the-band-back-end/register.php">Sign up now</a>.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            
+        </div>
+    </body>
+</html>
