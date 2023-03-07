@@ -1,4 +1,5 @@
 import time
+import numpy as np
 
 from flask import Flask, render_template, Response
 from webcam import Webcam
@@ -21,16 +22,18 @@ def read_from_webcam(is_left):
     count = 0
     while True:
         # Read image from class Webcam
-        image = next(webcam.get_frame(is_left))
-
+        image = webcam.get_frame(is_left)
+        # print(image)
+        # image =np.random.randint(255, size=(900,800,3),dtype=np.uint8)
         if image is None:
             continue
 
+        # time.sleep(1)
         # Detect using Yolov7
         t1 = time.time()
         img, ccl, ccr = detector.detect(image, is_left, count)
         t2 = time.time()
-        print("Detect time:", t2 - t1)
+
         #TODO: i think we should inference per 5 frames instead
         img = cv2.resize(image, (960, 540))
         img = cv2.imencode('.jpg', img)[1].tobytes()
@@ -44,15 +47,14 @@ def left_camera():
 
 @app.route("/right_camera")
 def right_camera():
-    return 0 #Response( read_from_webcam(0), mimetype="multipart/x-mixed-replace; boundary=frame" )
+    return Response( read_from_webcam(0), mimetype="multipart/x-mixed-replace; boundary=frame" )
+    # return 0
 
 #TODO: web sockets
 #TODO: using AJAX to dynamically update statements (monitor, mouse, keyboard)
 @app.route('/statement')
 def statement():
     return 0
-    # cc = str(ccl) + str(ccr)
-    # return Response( cc, mimetype='text/plain')
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=False)

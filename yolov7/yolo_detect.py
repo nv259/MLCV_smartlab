@@ -34,7 +34,7 @@ def draw_text(img, text,
     return text_size
 
 class YoloDetect():
-    def __init__(self, weights=r'./yolov7/trained__pt/best.pt', img_size=640, iou_thres=0.45, conf_thres=0.25):
+    def __init__(self, weights=r'./yolov7/trained__pt/best.pt', img_size=384, iou_thres=0.45, conf_thres=0.25):
         # self.source = source
         self.weights = weights
         self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
