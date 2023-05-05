@@ -1,0 +1,17 @@
+\babel@toc {vietnamese}{}\relax 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Các bước xử lý cơ bản của hệ thống\relax }}{2}{figure.caption.4}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Nhận diện các vật thể trong một căn phòng\relax }}{6}{figure.caption.5}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Object detection pipeline\relax }}{8}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Hình ảnh minh họa về thuật toán Selective search\relax }}{9}{figure.caption.7}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Hình ảnh minh họa kiến trúc R-CNN \textmd {(được trích xuất từ bài báo gốc \cite {girshick2014rich}). Mô hình (1) đọc ảnh đầu vào, (2) trích xuất khoảng 2000 region proposal, (3) tính toán các đặc trưng trên từng đề xuất bằng CNN, cuối cùng (4) phân lớp từng khu vực sử dụng SVMs. }\relax }}{10}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Kiến trúc của Fast R-CNN\relax }}{11}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Hình ảnh minh họa RoI Pooling\relax }}{11}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Kiến trúc của Faster R-CNN \textmd {}\relax }}{13}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Hình ảnh minh họa kiến trúc RPN \textmd {(ảnh trích xuất từ bài báo Ren et al. \citep {ren2015faster})}\relax }}{14}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces caption\relax }}{19}{figure.caption.20}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

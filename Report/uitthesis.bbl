@@ -1,0 +1,54 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{Cheng {\em et~al.\/}(2018)Cheng, Wei, Shi, Feris, Xiong \&
+  Huang}]{cheng2018revisiting}
+{\sc Cheng, B., Wei, Y., Shi, H., Feris, R., Xiong, J. \& Huang, T.} (2018).
+  Revisiting rcnn: On awakening the classification power of faster rcnn. In
+  {\em Proceedings of the European conference on computer vision (ECCV)\/},
+  453--468.
+
+\bibitem[{Deng {\em et~al.\/}(2020)Deng, Xuan, Wang, Li, Yao \&
+  Wang}]{Deng2020}
+{\sc Deng, J., Xuan, X., Wang, W., Li, Z., Yao, H. \& Wang, Z.} (2020). A
+  review of research on object detection based on deep learning. In {\em
+  Journal of Physics: Conference Series\/}, vol. 1684, 012028, IOP Publishing.
+
+\bibitem[{Girshick(2015)}]{Girshick_2015_ICCV}
+{\sc Girshick, R.} (2015). Fast r-cnn. In {\em Proceedings of the IEEE
+  International Conference on Computer Vision (ICCV)\/}.
+
+\bibitem[{Girshick {\em et~al.\/}(2014)Girshick, Donahue, Darrell \&
+  Malik}]{girshick2014rich}
+{\sc Girshick, R., Donahue, J., Darrell, T. \& Malik, J.} (2014). Rich feature
+  hierarchies for accurate object detection and semantic segmentation.
+
+\bibitem[{He {\em et~al.\/}(2015)He, Zhang, Ren \& Sun}]{he2015spatial}
+{\sc He, K., Zhang, X., Ren, S. \& Sun, J.} (2015). Spatial pyramid pooling in
+  deep convolutional networks for visual recognition. {\em IEEE transactions on
+  pattern analysis and machine intelligence\/}, {\bf 37}, 1904--1916.
+
+\bibitem[{Matthew~Zeiler \& Rob(2014)}]{matthew2014visualizing}
+{\sc Matthew~Zeiler, D. \& Rob, F.} (2014). Visualizing and understanding
+  convolutional neural networks. ECCV.
+
+\bibitem[{Ren {\em et~al.\/}(2015)Ren, He, Girshick \& Sun}]{ren2015faster}
+{\sc Ren, S., He, K., Girshick, R. \& Sun, J.} (2015). Faster r-cnn: Towards
+  real-time object detection with region proposal networks. {\em Advances in
+  neural information processing systems\/}, {\bf 28}.
+
+\bibitem[{Simonyan \& Zisserman(2014)}]{simonyan2014very}
+{\sc Simonyan, K. \& Zisserman, A.} (2014). Very deep convolutional networks
+  for large-scale image recognition. {\em arXiv preprint arXiv:1409.1556\/}.
+
+\bibitem[{Uijlings {\em et~al.\/}(2013)Uijlings, Van De~Sande, Gevers \&
+  Smeulders}]{uijlings2013selective}
+{\sc Uijlings, J.R., Van De~Sande, K.E., Gevers, T. \& Smeulders, A.W.} (2013).
+  Selective search for object recognition. {\em International journal of
+  computer vision\/}, {\bf 104}, 154--171.
+
+\bibitem[{Wang {\em et~al.\/}(2022)Wang, Bochkovskiy \& Liao}]{wang2022yolov7}
+{\sc Wang, C.Y., Bochkovskiy, A. \& Liao, H.Y.M.} (2022). Yolov7: Trainable
+  bag-of-freebies sets new state-of-the-art for real-time object detectors.
+
+\end{thebibliography}

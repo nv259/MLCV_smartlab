@@ -1,0 +1,77 @@
+% This template originates from the Cambridge University thesis 
+% which is created by Prof Harish Bhanderi.  
+% This is template follows the GNU license for Education and training
+% purposes. (http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/ThesisStyle/) 
+% 
+%
+% I modified for uses in University of Information Technology 
+% Vietnam National University. 
+
+\documentclass[oneside,12pt]{Classes/uitBA}
+
+
+ \ifpdf
+     \pdfinfo { /Title  (Thesis title)
+                /Creator (TeX)
+                /Producer (pdfTeX)
+                /Author (Nguyen Van X, Nguyen Van Y)
+                /CreationDate (D:20121211000000)  %format D:YYYYMMDDhhmmss
+                /ModDate (D:20030815213532)
+                /Subject (Thesis title)
+                /Keywords (PhD, Thesis)}
+     \pdfcatalog { /PageMode (/UseOutlines)
+                   /OpenAction (fitbh)  }
+ \fi
+     
+  \university{{ĐẠI HỌC QUỐC GIA THÀNH PHỐ HỒ CHÍ MINH\\
+               ĐẠI HỌC CÔNG NGHỆ THÔNG TIN}}
+  \collegeordept{{KHOA KHOA HỌC MÁY TÍNH}}  
+  \degree{ }   
+  \title{HỆ THỐNG PHÁT HIỆN THIẾT BỊ TRONG PHÒNG HỌC THÔNG MINH THỜI GIAN THỰC} 
+  \crest{} 
+  \supervisor{{CN. TRẦN DOÃN THUYÊN}}
+  \author{{NGUYỄN VIỆT NHẬT}}   
+  \degreedate{4, 2023} 
+\hbadness=10000
+\hfuzz=50pt
+\usepackage{StyleFiles/watermark}
+%\edef\restoreparindent{\parindent=\the\parindent\relax}
+\usepackage[indent=1cm]{parskip}
+\onehalfspacing
+\usepackage[font=bf]{caption}
+
+
+
+\begin{document}
+\maketitle
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+\frontmatter % book mode only
+\pagenumbering{roman}
+%\include{Dedication/dedication}
+%\include{Acknowledgement/acknowledgement}
+%\include{Abstract/abstract}
+
+\tableofcontents
+\listoffigures
+ \printnomenclature[4cm]
+ \addcontentsline{toc}{chapter}{Nomenclature}
+
+\mainmatter  
+\include{Chapter1/chapter1}
+\include{Chapter2/chapter2}
+\include{Chapter3/chapter3}
+\include{Conclusions/conclusions}
+
+\backmatter  
+\appendix
+\include{Appendix1/appendix1}
+\include{Appendix2/appendix2}
+ 
+\bibliographystyle{Classes/jmb} % bibliography style
+\renewcommand{\bibname}{References} % changes default name Bibliography to References
+\nocite{*}
+\bibliography{References/references} % References file
+
+\end{document}

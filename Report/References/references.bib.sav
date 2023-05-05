@@ -1,0 +1,84 @@
+@InProceedings{cheng2018revisiting,
+  author    = {Cheng, Bowen and Wei, Yunchao and Shi, Honghui and Feris, Rogerio and Xiong, Jinjun and Huang, Thomas},
+  booktitle = {Proceedings of the European conference on computer vision (ECCV)},
+  title     = {Revisiting rcnn: On awakening the classification power of faster rcnn},
+  year      = {2018},
+  pages     = {453--468},
+}
+
+@InProceedings{Deng2020,
+  author       = {Deng, Jun and Xuan, Xiaojing and Wang, Weifeng and Li, Zhao and Yao, Hanwen and Wang, Zhiqiang},
+  booktitle    = {Journal of Physics: Conference Series},
+  title        = {A review of research on object detection based on deep learning},
+  year         = {2020},
+  number       = {1},
+  organization = {IOP Publishing},
+  pages        = {012028},
+  volume       = {1684},
+}
+
+@Article{ren2015faster,
+  author  = {Ren, Shaoqing and He, Kaiming and Girshick, Ross and Sun, Jian},
+  journal = {Advances in neural information processing systems},
+  title   = {Faster r-cnn: Towards real-time object detection with region proposal networks},
+  year    = {2015},
+  volume  = {28},
+}
+
+@Misc{wang2022yolov7,
+  author        = {Chien-Yao Wang and Alexey Bochkovskiy and Hong-Yuan Mark Liao},
+  title         = {YOLOv7: Trainable bag-of-freebies sets new state-of-the-art for real-time object detectors},
+  year          = {2022},
+  archiveprefix = {arXiv},
+  eprint        = {2207.02696},
+  primaryclass  = {cs.CV},
+}
+
+@Article{uijlings2013selective,
+  author    = {Uijlings, Jasper RR and Van De Sande, Koen EA and Gevers, Theo and Smeulders, Arnold WM},
+  journal   = {International journal of computer vision},
+  title     = {Selective search for object recognition},
+  year      = {2013},
+  pages     = {154--171},
+  volume    = {104},
+  publisher = {Springer},
+}
+
+@Misc{girshick2014rich,
+  author        = {Ross Girshick and Jeff Donahue and Trevor Darrell and Jitendra Malik},
+  title         = {Rich feature hierarchies for accurate object detection and semantic segmentation},
+  year          = {2014},
+  archiveprefix = {arXiv},
+  eprint        = {1311.2524},
+  primaryclass  = {cs.CV},
+}
+
+@InProceedings{Girshick_2015_ICCV,
+  author    = {Girshick, Ross},
+  booktitle = {Proceedings of the IEEE International Conference on Computer Vision (ICCV)},
+  title     = {Fast R-CNN},
+  year      = {2015},
+  month     = {December},
+}
+
+@Article{he2015spatial,
+  author    = {He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  journal   = {IEEE transactions on pattern analysis and machine intelligence},
+  title     = {Spatial pyramid pooling in deep convolutional networks for visual recognition},
+  year      = {2015},
+  number    = {9},
+  pages     = {1904--1916},
+  volume    = {37},
+  publisher = {IEEE},
+}
+
+@Article{simonyan2014very,
+  author  = {Simonyan, Karen and Zisserman, Andrew},
+  journal = {arXiv preprint arXiv:1409.1556},
+  title   = {Very deep convolutional networks for large-scale image recognition},
+  year    = {2014},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
+
+% ------------------------------------------------------------------------

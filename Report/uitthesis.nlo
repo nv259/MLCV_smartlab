@@ -1,0 +1,9 @@
+\nomenclatureentry{aPipeline@[{Pipeline}]\begingroup Tập hợp các bước xử lý liên tiếp nhận đầu vào là dữ liệu (ảnh, âm thanh, các trường dữ liệu) và trả ra kết quả dự doán ở output.\nomeqref {2.0}|nompageref}{7}
+\nomenclatureentry{aRegion proposal@[{Region proposal}]\begingroup Vùng đề xuất, là những vùng mà có khả năng chứa đối tượng ở bên trong nó.\nomeqref {2.0}|nompageref}{7}
+\nomenclatureentry{aBounding box@[{Bounding box}]\begingroup Hình chữ nhật được vẽ bao quan đối tượng nhằm xác định đối tượng.\nomeqref {2.0}|nompageref}{7}
+\nomenclatureentry{amAP@[{mAP}]\begingroup mean Average Precision\nomeqref {2.0}|nompageref}{11}
+\nomenclatureentry{aRoI@[{RoI}]\begingroup Region of Interest\nomeqref {2.0}|nompageref}{11}
+\nomenclatureentry{aScale@[{Scale}]\begingroup Độ phóng đại so với khung hình gốc\nomeqref {2.0}|nompageref}{12}
+\nomenclatureentry{aAspect ratio@[{Aspect ratio}]\begingroup Tỷ lệ cạnh $w/h$\nomeqref {2.0}|nompageref}{12}
+\nomenclatureentry{aGround-truth box@[{Ground-truth box}]\begingroup Tập các tọa độ của một đối tượng trong ảnh, được gán nhãn một cách thủ công hoặc nhận được từ một nguồn tin cậy\nomeqref {2.1}|nompageref}{16}
+\nomenclatureentry{aMini-batch@[{Mini-batch}]\begingroup Một tập con nhỏ gồm các mẫu dữ liệu được lấy ngẫu nhiên từ tập dữ liệu tập dữ liệu đầy đủ\nomeqref {2.2}|nompageref}{16}
