@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flask SocketIO String Update Example</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.min.js" integrity="sha512-W/Klnw1DP/2cnhIKQgQOv9XW0HNFt29DD0gpkQZdAZzyxFWwEG8l4NRxOAbzKpY1GhshL8wdqsqIinFZ0+CvTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+  <body>
+    <h1 id="string"></h1>
+    <script>
+      var socket = io.connect('http://localhost:5000');
+      socket.on('connect', function() {
+        console.log('Connected to server');
+      });
+      socket.on('string updated', function(data) {
+        var string = data['string'];
+        document.getElementById('string').innerHTML = string;
+      });
+    </script>
+  </body>
+</html>

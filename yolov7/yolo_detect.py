@@ -1,10 +1,10 @@
 import sys
 sys.path.insert(0, './yolov7')
 import time
-from pathlib import Path
+# from pathlib import Path
 import cv2
 import torch
-import torch.backends.cudnn as cudnn
+# import torch.backends.cudnn as cudnn
 from numpy import random
 import numpy as np
 
@@ -34,15 +34,12 @@ def draw_text(img, text,
     return text_size
 
 class YoloDetect():
-    def __init__(self, weights=r'./yolov7/trained__pt/best.pt', img_size=384, iou_thres=0.45, conf_thres=0.25):
-        # self.source = source
+    def __init__(self, weights, img_size=384, iou_thres=0.45, conf_thres=0.25):
         self.weights = weights
         self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
         self.img_size = img_size
         self.iou_thres = iou_thres
         self.conf_thres = conf_thres
-        # self.webcam = self.source.isnumeric() or self.source.endswith('.txt') or self.source.lower().startswith(
-        #     ('rtsp://', 'rtmp://', 'http://', 'https://'))
 
         # Initialize
         set_logging()
@@ -157,11 +154,7 @@ class YoloDetect():
                 sr = 'right-ROI:  ' + str(ccr)
                 font = cv2.FONT_HERSHEY_SIMPLEX
                 cv2.putText(im0, fps, (7, 1000), font, 2, (0, 0, 255), 2, cv2.LINE_AA)
-                # cv2.putText(im0, s, (7, 70), font, 2, (100, 255, 0), 3, cv2.LINE_AA)
                 draw_text(im0, sl, font, (7, 70), 2, 2, (100, 255, 0))
                 draw_text(im0, sr, font, (7, 140), 2, 2, (100, 255, 0))
-            # Print time (inference + NMS)
-            # print(f'{s}Done. ({(1E3 * (t2 - t1)):.1f}ms) Inference, ({(1E3 * (t3 - t2)):.1f}ms) NMS')
 
-        # print(f'Done. ({time.time() - t0:.3f}s)')
         return im0, ccl, ccr

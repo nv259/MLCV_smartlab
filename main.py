@@ -9,7 +9,8 @@ import cv2
 
 app = Flask(__name__)
 webcam = Webcam()
-detector = YoloDetect()
+device_detector = YoloDetect(r'./yolov7/trained__pt/devices.pt')
+# human_detector = YoloDetect(r'./yolov7/trained__pt/human.pt')
 ccl = dict()
 ccr = dict()
 
@@ -23,19 +24,17 @@ def read_from_webcam(is_left):
     while True:
         # Read image from class Webcam
         image = webcam.get_frame(is_left)
-        # print(image)
-        # image =np.random.randint(255, size=(900,800,3),dtype=np.uint8)
+
         if image is None:
             continue
 
-        # time.sleep(1)
         # Detect using Yolov7
         t1 = time.time()
-        img, ccl, ccr = detector.detect(image, is_left, count)
+        img, ccl, ccr = device_detector.detect(image, is_left, count)
         t2 = time.time()
 
         #TODO: i think we should inference per 5 frames instead
-        img = cv2.resize(image, (960, 540))
+        img = cv2.resize(image, (1280, 720))
         img = cv2.imencode('.jpg', img)[1].tobytes()
 
         # Return image to web by yield cmd
@@ -48,7 +47,6 @@ def left_camera():
 @app.route("/right_camera")
 def right_camera():
     return Response( read_from_webcam(0), mimetype="multipart/x-mixed-replace; boundary=frame" )
-    # return 0
 
 #TODO: web sockets
 #TODO: using AJAX to dynamically update statements (monitor, mouse, keyboard)
