@@ -1,5 +1,10 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{21}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{Bochkovskiy {\em et~al.\/}(2020)Bochkovskiy, Wang \&
+  Liao}]{bochkovskiy2020yolov4}
+{\sc Bochkovskiy, A., Wang, C.Y. \& Liao, H.Y.M.} (2020). Yolov4: Optimal speed
+  and accuracy of object detection.
 
 \bibitem[{Cheng {\em et~al.\/}(2018)Cheng, Wei, Shi, Feris, Xiong \&
   Huang}]{cheng2018revisiting}
@@ -14,6 +19,12 @@
   review of research on object detection based on deep learning. In {\em
   Journal of Physics: Conference Series\/}, vol. 1684, 012028, IOP Publishing.
 
+\bibitem[{Ding {\em et~al.\/}(2021)Ding, Zhang, Ma, Han, Ding \&
+  Sun}]{ding2021repvgg}
+{\sc Ding, X., Zhang, X., Ma, N., Han, J., Ding, G. \& Sun, J.} (2021). Repvgg:
+  Making vgg-style convnets great again. In {\em Proceedings of the IEEE/CVF
+  conference on computer vision and pattern recognition\/}, 13733--13742.
+
 \bibitem[{Girshick(2015)}]{Girshick_2015_ICCV}
 {\sc Girshick, R.} (2015). Fast r-cnn. In {\em Proceedings of the IEEE
   International Conference on Computer Vision (ICCV)\/}.
@@ -23,14 +34,52 @@
 {\sc Girshick, R., Donahue, J., Darrell, T. \& Malik, J.} (2014). Rich feature
   hierarchies for accurate object detection and semantic segmentation.
 
+\bibitem[{Glenn(2022)}]{Glenn2022yolov5}
+{\sc Glenn, J.} (2022). Yolov5 version 7.0.
+  \url{https://github.com/ultralytics/yolov5/releases}.
+
 \bibitem[{He {\em et~al.\/}(2015)He, Zhang, Ren \& Sun}]{he2015spatial}
 {\sc He, K., Zhang, X., Ren, S. \& Sun, J.} (2015). Spatial pyramid pooling in
   deep convolutional networks for visual recognition. {\em IEEE transactions on
   pattern analysis and machine intelligence\/}, {\bf 37}, 1904--1916.
 
+\bibitem[{He {\em et~al.\/}(2016)He, Zhang, Ren \& Sun}]{he2016deep}
+{\sc He, K., Zhang, X., Ren, S. \& Sun, J.} (2016). Deep residual learning for
+  image recognition. In {\em Proceedings of the IEEE conference on computer
+  vision and pattern recognition\/}, 770--778.
+
+\bibitem[{Lin {\em et~al.\/}(2017)Lin, Doll{\'a}r, Girshick, He, Hariharan \&
+  Belongie}]{lin2017feature}
+{\sc Lin, T.Y., Doll{\'a}r, P., Girshick, R., He, K., Hariharan, B. \&
+  Belongie, S.} (2017). Feature pyramid networks for object detection. In {\em
+  Proceedings of the IEEE conference on computer vision and pattern
+  recognition\/}, 2117--2125.
+
+\bibitem[{Liu {\em et~al.\/}(2018)Liu, Qi, Qin, Shi \& Jia}]{Liu2018}
+{\sc Liu, S., Qi, L., Qin, H., Shi, J. \& Jia, J.} (2018). Path aggregation
+  network for instance segmentation. In {\em Proceedings of the IEEE conference
+  on computer vision and pattern recognition\/}, 8759--8768.
+
+\bibitem[{Maas {\em et~al.\/}(2013)Maas, Hannun, Ng {\em
+  et~al.\/}}]{maas2013rectifier}
+{\sc Maas, A.L., Hannun, A.Y., Ng, A.Y. {\em et~al.\/}} (2013). Rectifier
+  nonlinearities improve neural network acoustic models. In {\em Proc. icml\/},
+  vol.~30, 3, Atlanta, Georgia, USA.
+
 \bibitem[{Matthew~Zeiler \& Rob(2014)}]{matthew2014visualizing}
 {\sc Matthew~Zeiler, D. \& Rob, F.} (2014). Visualizing and understanding
   convolutional neural networks. ECCV.
+
+\bibitem[{Ramachandran {\em et~al.\/}(2017)Ramachandran, Zoph \&
+  Le}]{ramachandran2017searching}
+{\sc Ramachandran, P., Zoph, B. \& Le, Q.V.} (2017). Searching for activation
+  functions. {\em arXiv preprint arXiv:1710.05941\/}.
+
+\bibitem[{Redmon {\em et~al.\/}(2016)Redmon, Divvala, Girshick \&
+  Farhadi}]{Redmon_2016_CVPR}
+{\sc Redmon, J., Divvala, S., Girshick, R. \& Farhadi, A.} (2016). You only
+  look once: Unified, real-time object detection. In {\em Proceedings of the
+  IEEE Conference on Computer Vision and Pattern Recognition (CVPR)\/}.
 
 \bibitem[{Ren {\em et~al.\/}(2015)Ren, He, Girshick \& Sun}]{ren2015faster}
 {\sc Ren, S., He, K., Girshick, R. \& Sun, J.} (2015). Faster r-cnn: Towards
@@ -41,11 +90,22 @@
 {\sc Simonyan, K. \& Zisserman, A.} (2014). Very deep convolutional networks
   for large-scale image recognition. {\em arXiv preprint arXiv:1409.1556\/}.
 
+\bibitem[{Tan \& Le(2019)}]{tan2019mixconv}
+{\sc Tan, M. \& Le, Q.V.} (2019). Mixconv: Mixed depthwise convolutional
+  kernels. {\em arXiv preprint arXiv:1907.09595\/}.
+
 \bibitem[{Uijlings {\em et~al.\/}(2013)Uijlings, Van De~Sande, Gevers \&
   Smeulders}]{uijlings2013selective}
 {\sc Uijlings, J.R., Van De~Sande, K.E., Gevers, T. \& Smeulders, A.W.} (2013).
   Selective search for object recognition. {\em International journal of
   computer vision\/}, {\bf 104}, 154--171.
+
+\bibitem[{Wang {\em et~al.\/}(2020)Wang, Liao, Wu, Chen, Hsieh \&
+  Yeh}]{wang2020cspnet}
+{\sc Wang, C.Y., Liao, H.Y.M., Wu, Y.H., Chen, P.Y., Hsieh, J.W. \& Yeh, I.H.}
+  (2020). Cspnet: A new backbone that can enhance learning capability of cnn.
+  In {\em Proceedings of the IEEE/CVF conference on computer vision and pattern
+  recognition workshops\/}, 390--391.
 
 \bibitem[{Wang {\em et~al.\/}(2022)Wang, Bochkovskiy \& Liao}]{wang2022yolov7}
 {\sc Wang, C.Y., Bochkovskiy, A. \& Liao, H.Y.M.} (2022). Yolov7: Trainable

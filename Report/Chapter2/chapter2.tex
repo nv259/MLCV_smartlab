@@ -227,8 +227,42 @@ Tuy nhiên, Faster R-CNN vẫn tồn tại một số nhược điểm. Việc s
 \section{YOLOv7 (2022)}
 \markboth{\MakeUppercase{\thechapter. Cơ Sở Lý Thuyết Và Các Nghiên Cứu Liên Quan }}{\thechapter. Cơ Sở Lý Thuyết Và Các Nghiên Cứu Liên Quan}
 
+Được giới thiệu không lâu sau YOLOv6 bởi Wang et al, YOLOv7 \cite{wang2022yolov7} là một thuật toán phát hiện đối tượng tiên tiến được thiết 1kế để nhận dạng và định vị các đối tượng trong hình ảnh và video trong thời gian thực. Đây là phiên bản mở rộng của họ phát hiện đối tượng YOLO (You Only Look Once) phổ biến. Khác với các thuật toán phát hiện đối tượng truyền thống sử dụng nhiều giai đoạn (multi-stage), YOLO là một thuật toán one-stage, nghĩa là chỉ sử dụng một mạng neural để thực hiện đồng thời phát hiện, phân loại và xác định vị trí của đối tượng trực tiếp trên ảnh đầu vào. Việc sử dụng một mạng neural duy nhất giúp YOLO hoạt động nhanh hơn và đồng thời cũng giảm thiểu được sự mất mát thông tin giữa các giai đoạn trong quá trình phát hiện. 
+
 \begin{figure}[h]
 	\center
-	\includegraphics[width=\textwidth]{yolov7-ms-coco.png}
-	\caption{caption}
+	\includegraphics[width=\textwidth]{yolov7-performance.png}
+	\caption{So sánh hiệu suất của Yolov7 và các real-time detector khác \textmd{(Ảnh trích xuất từ bài báo \citep{wang2022yolov7})}}
 \end{figure}
+
+YOLOv7 vượt qua mọi mô hình phát hiện đối tượng và các phiên bản YOLO trước đó trong cả tốc độ và độ chính xác trong khoảng từ 5 FPS đến 160 FPS và có độ chính xác cao nhất với 56.8\% AP trong số toàn bộ các mô hình phát hiện đối tượng hiện có, trong khi vẫn giữ được tốc độ 30 FPS hoặc nhiều hơn trên GPU V100. Bên cạnh đó, YOLOv7 yêu cầu phần cứng thấp hơn các mạng neural khác và có thể được huấn luyện nhanh hơn trên các dataset nhỏ mà không cần sử dụng bất kỳ pre-trained nào.
+
+\subsection{Kiến trúc}
+Một trong những cải tiến của YOLOv7 là thay đổi hàm kích hoạt (activation function) từ Leaky ReLU \cite{maas2013rectifier} sang Swish \cite{ramachandran2017searching} - một hàm kích hoạt mới hơn, có độ chính xác cao hơn và thời gian huấn luyện nhanh hơn so với Leaky ReLU. Các module cơ bản khác được tối ưu hóa dựa trên ý tưởng thiết kế của residual connection \cite{he2016deep}, nhưng kiến trúc cơ bản của không có nhiều sự thay đổi và vẫn bao gồm bốn phần chính, là: Input, Backbone, Neck và 	Prediction (Head).
+
+\begin{figure}[h]
+	\center
+	\includegraphics[width=\textwidth]{yolov7-architecture.png}
+	\caption{Hình ảnh minh họa kiến trúc One-stage detector}
+\end{figure}
+
+\subsubsection*{Input}
+Trong giai đoạn tiền xử lý, mô hình YOLOv7 áp dụng cả các kỹ thuật tăng cường dữ liệu \citep{bochkovskiy2020yolov4, tan2019mixconv}, đồng thời khai thác phương pháp tính toán anchor thích ứng (adaptive anchor) được thiết lập bởi YOLOv5 \cite{Glenn2022yolov5}, đảm bảo rằng các hình ảnh đầu vào được scale về tỷ lệ $640 \times 640$, đáp ứng yêu cầu về kích thước đầu vào của mạng Backbone.
+
+\subsubsection*{Backbone}
+Mạng Backbone đóng vai trò quan trọng nhằm trích xuất các đặc trưng.
+Mạng Backbone cơ bản của các thuật toán YOLO là Darknet \cite{Redmon_2016_CVPR}, được xây dựng bởi Joseph Redmon vào năm 2016. Các phiên bản YOLO khác nhau tối ưu hóa mạng Darknet này theo các cách khác nhau, phụ thuộc vào kiến trúc của chúng. Mạng Backbone của YOLOv7 được cấu hình bao gồm ba thành phần chính: CBS (kết hợp giữa Convolution, Batch-norm và hàm kích hoạt SiLU), Extended-ELAN (E-ELAN) và MP1. Module E-ELAN cải thiện khả năng học của mạng bằng cách hướng các khối tính toán đặc trưng khác nhau để học được nhiều đặc trưng đa dạng hơn, trong khi vẫn giữ nguyên kiến trúc ELAN ban đầu và đường gradient gốc. Thành phần MaxPool-1 (MP1) bao gồm CBS và MaxPool, được chia thành nhánh trên và nhánh dưới. MaxPool trích xuất thông tin mang giá trị lớn nhất của các vùng địa phương (local) trong khi CBS trích xuất tất cả các thông tin về giá trị của các vùng địa phương, từ đó nâng cao khả năng trích xuất đặc trưng của mạng.
+
+\subsubsection*{Neck (Feature Fusion Zone)} 
+Lớp hợp nhất đặc trưng (feature fusion) được thiết kế nhằm cung cấp khả năng học tốt hơn các đặc trưng được trích xuất từ mạng Backbone. Các đặc trưng của các mức độ chi tiết khác nhau được học độc lập với nhau tại mạng Backbone và sau đó được hợp nhất tại lớp Neck của mạng, nhằm học được nhiều đặc trưng nhất có thể.
+
+Mạng Neck của YOLOv7 được cấu trúc bằng kiến trúc Feature Pyramid Network (FPN)\cite{lin2017feature}, dựa trên thiết kế PANet \cite{Liu2018}. Mạng này bao gồm các CBS, cùng với cấu trúc Spatial Pyramid Pooling and Convolutional Spatial Pyramid Pooling (bao gồm hai mạng là SPPnet và CSPnet) \cite{he2015spatial, wang2020cspnet}, cùng với mạng E-ELAN và MaxPool-2 (MP2).  
+
+\subsubsection*{Dense Prediction}
+Áp dụng những ưu điểm của các thuật toán trước, YOLOv7 vẫn giữ lại ba detection heads. Các detection heads này được sử dụng để phát hiện đối tượng, đồng thời trả về xác suất dựa đoán (confidence score) và tọa độ khung dự đoán của đối tượng đó.
+
+Mạng dự đoán của YOLOv7 sử dụng kiến trúc Rep, lấy cảm hứng từ RepVGG \cite{ding2021repvgg} và giới thiệu thiết kế residual đặc biệt nhằm hỗ trợ quá trình học của mạng. Thiết kế residual có thể đơn giản hóa thành một mạng tích chập trong các dự đoán thực tế, từ đó giảm độ phức tạp của mạng mà không ảnh hưởn đến độ chính xác dự đoán. Các đặc trưng từ tầng Neck được đưa qua mạng Rep để điều chỉnh số kênh ảnh, sau đó được áp dụng một tích chập để dự đoán độ tin cậy, loại vật thể và anchor.
+
+
+\subsection{Trainable bag-of-freebies}
+Bag-of-freebies (BoF) là một thuật ngữ được sử dụng trong lĩnh vực Machine Learning và Thị giác Máy tính. BoF bao gồm các kỹ thuật tiền xử lý hoặc tăng cường dữ liệu nhằm tăng cường hiệu suất mà không làm tăng độ phức tạp của mô hình. Trong họ YOLO, BoF lần đầu tiên được đề cập đến trong YOLOv4 \cite{bochkovskiy2020yolov4}. 

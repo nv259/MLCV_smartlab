@@ -1,5 +1,6 @@
 \backcite {girshick2014rich}{{iii}{(document)}{Doc-Start}}
 \backcite {ren2015faster}{{iii}{(document)}{Doc-Start}}
+\backcite {wang2022yolov7}{{iii}{(document)}{Doc-Start}}
 \backcite {ren2015faster}{{5}{2}{chapter.2}}
 \backcite {wang2022yolov7}{{5}{2}{chapter.2}}
 \backcite {Deng2020}{{6}{2.1}{figure.caption.5}}
@@ -21,3 +22,18 @@
 \backcite {Girshick_2015_ICCV}{{17}{2.2.4}{section*.17}}
 \backcite {matthew2014visualizing}{{18}{2.2.4}{section*.19}}
 \backcite {simonyan2014very}{{18}{2.2.4}{section*.19}}
+\backcite {wang2022yolov7}{{19}{2.3}{section.2.3}}
+\backcite {wang2022yolov7}{{20}{2.9}{figure.caption.20}}
+\backcite {maas2013rectifier}{{20}{2.3.1}{subsection.2.3.1}}
+\backcite {ramachandran2017searching}{{20}{2.3.1}{subsection.2.3.1}}
+\backcite {he2016deep}{{20}{2.3.1}{subsection.2.3.1}}
+\backcite {bochkovskiy2020yolov4}{{20}{2.3.1}{section*.22}}
+\backcite {tan2019mixconv}{{20}{2.3.1}{section*.22}}
+\backcite {Glenn2022yolov5}{{20}{2.3.1}{section*.22}}
+\backcite {Redmon_2016_CVPR}{{21}{2.3.1}{section*.23}}
+\backcite {lin2017feature}{{21}{2.3.1}{section*.24}}
+\backcite {Liu2018}{{21}{2.3.1}{section*.24}}
+\backcite {he2015spatial}{{21}{2.3.1}{section*.24}}
+\backcite {wang2020cspnet}{{21}{2.3.1}{section*.24}}
+\backcite {ding2021repvgg}{{22}{2.3.1}{section*.25}}
+\backcite {bochkovskiy2020yolov4}{{22}{2.3.2}{subsection.2.3.2}}

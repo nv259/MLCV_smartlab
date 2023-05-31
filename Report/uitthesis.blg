@@ -19,46 +19,47 @@ Reallocating 'name_of_file' (item size: 1) to 22 items.
 Database file #1: References/references.bib
 Reallocating 'wiz_functions' (item size: 4) to 6000 items.
 Warning--can't use both volume and number fields in Deng2020
+Warning--can't use both volume and number fields in maas2013rectifier
 Warning--empty booktitle in matthew2014visualizing
-You've used 10 entries,
+You've used 21 entries,
             3018 wiz_defined-function locations,
-            698 strings with 6474 characters,
-and the built_in function-call counts, 6367 in all, are:
-= -- 532
-> -- 334
-< -- 4
-+ -- 120
-- -- 108
-* -- 525
-:= -- 969
-add.period$ -- 28
-call.type$ -- 10
-change.case$ -- 92
-chr.to.int$ -- 10
-cite$ -- 12
-duplicate$ -- 451
-empty$ -- 428
-format.name$ -- 140
-if$ -- 1267
+            753 strings with 8424 characters,
+and the built_in function-call counts, 14211 in all, are:
+= -- 1199
+> -- 740
+< -- 7
++ -- 263
+- -- 240
+* -- 1150
+:= -- 2120
+add.period$ -- 60
+call.type$ -- 21
+change.case$ -- 204
+chr.to.int$ -- 21
+cite$ -- 24
+duplicate$ -- 1004
+empty$ -- 968
+format.name$ -- 305
+if$ -- 2877
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 87
-newline$ -- 34
-num.names$ -- 40
-pop$ -- 216
+missing$ -- 188
+newline$ -- 67
+num.names$ -- 84
+pop$ -- 477
 preamble$ -- 1
-purify$ -- 76
+purify$ -- 163
 quote$ -- 0
-skip$ -- 194
+skip$ -- 462
 stack$ -- 0
-substring$ -- 212
-swap$ -- 236
-text.length$ -- 1
+substring$ -- 527
+swap$ -- 531
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 90
-warning$ -- 2
-while$ -- 38
+type$ -- 189
+warning$ -- 3
+while$ -- 87
 width$ -- 0
-write$ -- 108
-(There were 2 warnings)
+write$ -- 225
+(There were 3 warnings)

@@ -16,10 +16,12 @@
 \contentsline {subsection}{\numberline {2.2.3}Fast R-CNN (2015)}{10}{subsection.2.2.3}%
 \contentsline {subsection}{\numberline {2.2.4}Faster R-CNN (2016)}{12}{subsection.2.2.4}%
 \contentsline {section}{\numberline {2.3}YOLOv7 (2022)}{19}{section.2.3}%
-\contentsline {chapter}{\numberline {3}Thực Nghiệm Và Kết Quả}{20}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Cài đặt thực nghiệm}{20}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Kết quả thực nghiệm}{20}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Kết luận và hướng phát triển}{21}{chapter.4}%
-\contentsline {chapter}{Phụ lục A}{22}{appendix*.21}%
-\contentsline {chapter}{Phụ lục B}{23}{appendix*.22}%
-\contentsline {chapter}{References}{24}{appendix*.23}%
+\contentsline {subsection}{\numberline {2.3.1}Kiến trúc}{20}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Trainable bag-of-freebies}{22}{subsection.2.3.2}%
+\contentsline {chapter}{\numberline {3}Thực Nghiệm Và Kết Quả}{23}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Cài đặt thực nghiệm}{23}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Kết quả thực nghiệm}{23}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Kết luận và hướng phát triển}{24}{chapter.4}%
+\contentsline {chapter}{Phụ lục A}{25}{appendix*.26}%
+\contentsline {chapter}{Phụ lục B}{26}{appendix*.27}%
+\contentsline {chapter}{References}{27}{appendix*.28}%

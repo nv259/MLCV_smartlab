@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.21)  5 MAY 2023 08:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.21)  20 MAY 2023 21:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -785,7 +785,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
  (Chapter1/chapter1.tex
 Ch\uhorn \ohorn ng 1.
-<Chapter1/Chapter1Figs//tong-quan-bai-toan.png, id=172, 453.0015pt x 283.167pt>
+<Chapter1/Chapter1Figs//tong-quan-bai-toan.png, id=186, 453.0015pt x 283.167pt>
 
 File: Chapter1/Chapter1Figs//tong-quan-bai-toan.png Graphic file (type png)
 <use Chapter1/Chapter1Figs//tong-quan-bai-toan.png>
@@ -817,7 +817,7 @@ Ch\uhorn \ohorn ng 2.
 
 ]
 <Chapter2/Chapter2Figs//Detected-with-YOLO--Schreibtisch-mit-Objekten.jpg, id=2
-12, 642.4pt x 413.545pt>
+25, 642.4pt x 413.545pt>
 File: Chapter2/Chapter2Figs//Detected-with-YOLO--Schreibtisch-mit-Objekten.jpg 
 Graphic file (type jpg)
 <use Chapter2/Chapter2Figs//Detected-with-YOLO--Schreibtisch-mit-Objekten.jpg>
@@ -826,7 +826,7 @@ h-mit-Objekten.jpg  used on input line 19.
 (pdftex.def)             Requested size: 412.56496pt x 265.59547pt.
  [6 <./Chapter2/Chapter2Figs//Detected-with-YOLO--Schreibtisch-mit-Objekten.jpg
 >]
-<Chapter2/Chapter2Figs//Traditional-object-detecton-pipeline.png, id=219, 260.6
+<Chapter2/Chapter2Figs//Traditional-object-detecton-pipeline.png, id=232, 260.6
 1pt x 218.124pt>
 File: Chapter2/Chapter2Figs//Traditional-object-detecton-pipeline.png Graphic f
 ile (type png)
@@ -835,7 +835,7 @@ Package pdftex.def Info: Chapter2/Chapter2Figs//Traditional-object-detecton-pip
 eline.png  used on input line 42.
 (pdftex.def)             Requested size: 260.60936pt x 218.12344pt.
  [7] [8 <./Chapter2/Chapter2Figs//Traditional-object-detecton-pipeline.png>]
-<Chapter2/Chapter2Figs//Example-selective-search.png, id=232, 853.1875pt x 562.
+<Chapter2/Chapter2Figs//Example-selective-search.png, id=245, 853.1875pt x 562.
 1pt>
 File: Chapter2/Chapter2Figs//Example-selective-search.png Graphic file (type pn
 g)
@@ -843,7 +843,7 @@ g)
 Package pdftex.def Info: Chapter2/Chapter2Figs//Example-selective-search.png  u
 sed on input line 66.
 (pdftex.def)             Requested size: 341.26895pt x 224.83601pt.
-<Chapter2/Chapter2Figs//RCNN-overview.jpg, id=234, 706.89093pt x 207.77625pt>
+<Chapter2/Chapter2Figs//RCNN-overview.jpg, id=247, 706.89093pt x 207.77625pt>
 File: Chapter2/Chapter2Figs//RCNN-overview.jpg Graphic file (type jpg)
 <use Chapter2/Chapter2Figs//RCNN-overview.jpg>
 Package pdftex.def Info: Chapter2/Chapter2Figs//RCNN-overview.jpg  used on inpu
@@ -855,14 +855,14 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [9 <./Chapter2/Chapter2Figs//Example-selective-search.png>] [10 <./Chapter2/Cha
 pter2Figs//RCNN-overview.jpg>]
-<Chapter2/Chapter2Figs//Fast-RCNN-overview.jpg, id=252, 694.84593pt x 269.50688
+<Chapter2/Chapter2Figs//Fast-RCNN-overview.jpg, id=265, 694.84593pt x 269.50688
 pt>
 File: Chapter2/Chapter2Figs//Fast-RCNN-overview.jpg Graphic file (type jpg)
 <use Chapter2/Chapter2Figs//Fast-RCNN-overview.jpg>
 Package pdftex.def Info: Chapter2/Chapter2Figs//Fast-RCNN-overview.jpg  used on
  input line 90.
 (pdftex.def)             Requested size: 412.56496pt x 160.0193pt.
-<Chapter2/Chapter2Figs//RoI-Pooling-example.png, id=254, 727.956pt x 154.833pt>
+<Chapter2/Chapter2Figs//RoI-Pooling-example.png, id=267, 727.956pt x 154.833pt>
 
 File: Chapter2/Chapter2Figs//RoI-Pooling-example.png Graphic file (type png)
 <use Chapter2/Chapter2Figs//RoI-Pooling-example.png>
@@ -871,7 +871,7 @@ n input line 100.
 (pdftex.def)             Requested size: 412.56496pt x 87.75249pt.
  [11 <./Chapter2/Chapter2Figs//Fast-RCNN-overview.jpg> <./Chapter2/Chapter2Figs
 //RoI-Pooling-example.png>]
-<Chapter2/Chapter2Figs//Faster-RCNN-architecture.jpg, id=264, 634.37pt x 624.33
+<Chapter2/Chapter2Figs//Faster-RCNN-architecture.jpg, id=277, 634.37pt x 624.33
 25pt>
 File: Chapter2/Chapter2Figs//Faster-RCNN-architecture.jpg Graphic file (type jp
 g)
@@ -884,25 +884,39 @@ sed on input line 125.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [12] [13 <./Chapter2/Chapter2Figs//Faster-RCNN-architecture.jpg>]
-<Chapter2/Chapter2Figs//RPN-architecture.png, id=283, 579.96675pt x 344.487pt>
+<Chapter2/Chapter2Figs//RPN-architecture.png, id=296, 579.96675pt x 344.487pt>
 File: Chapter2/Chapter2Figs//RPN-architecture.png Graphic file (type png)
 <use Chapter2/Chapter2Figs//RPN-architecture.png>
 Package pdftex.def Info: Chapter2/Chapter2Figs//RPN-architecture.png  used on i
 nput line 152.
 (pdftex.def)             Requested size: 289.98267pt x 172.24307pt.
  [14 <./Chapter2/Chapter2Figs//RPN-architecture.png>] [15] [16] [17] [18]
-<Chapter2/Chapter2Figs//yolov7-ms-coco.png, id=330, 505.89pt x 329.43076pt>
-File: Chapter2/Chapter2Figs//yolov7-ms-coco.png Graphic file (type png)
-<use Chapter2/Chapter2Figs//yolov7-ms-coco.png>
-Package pdftex.def Info: Chapter2/Chapter2Figs//yolov7-ms-coco.png  used on inp
-ut line 232.
-(pdftex.def)             Requested size: 412.56496pt x 268.66214pt.
-) [19 <./Chapter2/Chapter2Figs//yolov7-ms-coco.png>]
+<Chapter2/Chapter2Figs//yolov7-performance.png, id=344, 1009.97325pt x 379.4175
+pt>
+File: Chapter2/Chapter2Figs//yolov7-performance.png Graphic file (type png)
+<use Chapter2/Chapter2Figs//yolov7-performance.png>
+Package pdftex.def Info: Chapter2/Chapter2Figs//yolov7-performance.png  used on
+ input line 234.
+(pdftex.def)             Requested size: 412.56496pt x 154.98323pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[19]
+<Chapter2/Chapter2Figs//yolov7-architecture.png, id=354, 1421.31pt x 383.4325pt
+>
+File: Chapter2/Chapter2Figs//yolov7-architecture.png Graphic file (type png)
+<use Chapter2/Chapter2Figs//yolov7-architecture.png>
+Package pdftex.def Info: Chapter2/Chapter2Figs//yolov7-architecture.png  used o
+n input line 245.
+(pdftex.def)             Requested size: 412.56496pt x 111.29788pt.
+ [20 <./Chapter2/Chapter2Figs//yolov7-performance.png> <./Chapter2/Chapter2Figs
+//yolov7-architecture.png (PNG copy)>] [21]) [22]
 \openout2 = `Chapter3/chapter3.aux'.
 
  (Chapter3/chapter3.tex
 Ch\uhorn \ohorn ng 3.
-) [20
+) [23
 
 
 
@@ -912,7 +926,7 @@ Ch\uhorn \ohorn ng 3.
 
  (Conclusions/conclusions.tex
 Ch\uhorn \ohorn ng 4.
-) [21
+) [24
 
 
 
@@ -920,7 +934,7 @@ Ch\uhorn \ohorn ng 4.
 ]
 \openout2 = `Appendix1/appendix1.aux'.
 
- (Appendix1/appendix1.tex) [22
+ (Appendix1/appendix1.tex) [25
 
 
 
@@ -929,7 +943,7 @@ Ch\uhorn \ohorn ng 4.
 ]
 \openout2 = `Appendix2/appendix2.aux'.
 
- (Appendix2/appendix2.tex) [23
+ (Appendix2/appendix2.tex) [26
 
 
 
@@ -939,26 +953,37 @@ Ch\uhorn \ohorn ng 4.
 \tf@brf=\write7
 \openout7 = `uitthesis.brf'.
 
- [24
+LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 4
+0.
+
+(C:\Users\Admin\AppData\Local\Programs\MiKTeX\tex/latex/vntex\t5cmtt.fd
+File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+[27
 
 
 
-]) [25] (uitthesis.aux (Chapter1/chapter1.aux) (Chapter2/chapter2.aux) (Chapter
-3/chapter3.aux) (Conclusions/conclusions.aux) (Appendix1/appendix1.aux) (Append
-ix2/appendix2.aux))
+]
+
+LaTeX Font Warning: Font shape `T5/cmr/m/scit' undefined
+(Font)              using `T5/cmr/m/it' instead on input line 68.
+
+[28]) [29] (uitthesis.aux (Chapter1/chapter1.aux) (Chapter2/chapter2.aux)
+(Chapter3/chapter3.aux) (Conclusions/conclusions.aux) (Appendix1/appendix1.aux)
+(Appendix2/appendix2.aux))
 Package rerunfilecheck Info: File `uitthesis.out' has not changed.
-(rerunfilecheck)             Checksum: 72BB1D900771E5B4B6401B0C9CB85DFB;4078.
+(rerunfilecheck)             Checksum: 857679DDDA96655437B8148AB2B4D4EE;4448.
 Package rerunfilecheck Info: File `uitthesis.brf' has not changed.
-(rerunfilecheck)             Checksum: 1F3A5E6685169E7F28799535B496089F;1316.
+(rerunfilecheck)             Checksum: B00860B7A3C62062FAEEB35D2E041474;2209.
  ) 
 Here is how much of TeX's memory you used:
- 16105 strings out of 476334
- 273436 string characters out of 5787971
+ 16227 strings out of 476334
+ 276058 string characters out of 5787971
  1861382 words of memory out of 5000000
- 36094 multiletter control sequences out of 15000+600000
- 530611 words of font info for 66 fonts, out of 8000000 for 9000
+ 36189 multiletter control sequences out of 15000+600000
+ 530922 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 125i,23n,120p,1466b,627s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 125i,23n,120p,1466b,613s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Admin\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1200.pk><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmex10.pfb><C:/Users/Admin/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -972,10 +997,11 @@ in/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnbx12.pfb><C:/Users/Adm
 in/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vncsc10.pfb><C:/Users/Ad
 min/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr12.pfb><C:/Users/Adm
 in/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr17.pfb><C:/Users/Admi
-n/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnti12.pfb>
-Output written on uitthesis.pdf (30 pages, 4683337 bytes).
+n/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnti12.pfb><C:/Users/Admi
+n/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vntt12.pfb>
+Output written on uitthesis.pdf (34 pages, 5008573 bytes).
 PDF statistics:
- 459 PDF objects out of 1000 (max. 8388607)
- 99 named destinations out of 1000 (max. 500000)
- 243 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 549 PDF objects out of 1000 (max. 8388607)
+ 121 named destinations out of 1000 (max. 500000)
+ 264 words of extra memory for PDF output out of 10000 (max. 10000000)
 

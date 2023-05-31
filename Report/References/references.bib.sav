@@ -79,6 +79,94 @@
   year    = {2014},
 }
 
+@InProceedings{matthew2014visualizing,
+  author       = {Matthew Zeiler, D and Rob, Fergus},
+  title        = {Visualizing and understanding convolutional neural networks},
+  year         = {2014},
+  organization = {ECCV},
+}
+
+@Misc{bochkovskiy2020yolov4,
+  author        = {Alexey Bochkovskiy and Chien-Yao Wang and Hong-Yuan Mark Liao},
+  title         = {YOLOv4: Optimal Speed and Accuracy of Object Detection},
+  year          = {2020},
+  archiveprefix = {arXiv},
+  eprint        = {2004.10934},
+  primaryclass  = {cs.CV},
+}
+
+@InProceedings{maas2013rectifier,
+  author       = {Maas, Andrew L and Hannun, Awni Y and Ng, Andrew Y and others},
+  booktitle    = {Proc. icml},
+  title        = {Rectifier nonlinearities improve neural network acoustic models},
+  year         = {2013},
+  number       = {1},
+  organization = {Atlanta, Georgia, USA},
+  pages        = {3},
+  volume       = {30},
+}
+
+@Article{ramachandran2017searching,
+  author  = {Ramachandran, Prajit and Zoph, Barret and Le, Quoc V},
+  journal = {arXiv preprint arXiv:1710.05941},
+  title   = {Searching for activation functions},
+  year    = {2017},
+}
+
+@InProceedings{he2016deep,
+  author    = {He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  booktitle = {Proceedings of the IEEE conference on computer vision and pattern recognition},
+  title     = {Deep residual learning for image recognition},
+  year      = {2016},
+  pages     = {770--778},
+}
+
+@Article{tan2019mixconv,
+  author  = {Tan, Mingxing and Le, Quoc V},
+  journal = {arXiv preprint arXiv:1907.09595},
+  title   = {Mixconv: Mixed depthwise convolutional kernels},
+  year    = {2019},
+}
+
+@Misc{Glenn2022yolov5,
+  author       = {Jocher Glenn},
+  howpublished = {\url{https://github.com/ultralytics/yolov5/releases}},
+  title        = {YOLOv5 version 7.0},
+  year         = {2022},
+}
+
+@InProceedings{Redmon_2016_CVPR,
+  author    = {Redmon, Joseph and Divvala, Santosh and Girshick, Ross and Farhadi, Ali},
+  booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  title     = {You Only Look Once: Unified, Real-Time Object Detection},
+  year      = {2016},
+  month     = {June},
+}
+
+@InProceedings{lin2017feature,
+  author    = {Lin, Tsung-Yi and Doll{\'a}r, Piotr and Girshick, Ross and He, Kaiming and Hariharan, Bharath and Belongie, Serge},
+  booktitle = {Proceedings of the IEEE conference on computer vision and pattern recognition},
+  title     = {Feature pyramid networks for object detection},
+  year      = {2017},
+  pages     = {2117--2125},
+}
+
+@InProceedings{Liu2018,
+  author    = {Liu, Shu and Qi, Lu and Qin, Haifang and Shi, Jianping and Jia, Jiaya},
+  booktitle = {Proceedings of the IEEE conference on computer vision and pattern recognition},
+  title     = {Path aggregation network for instance segmentation},
+  year      = {2018},
+  pages     = {8759--8768},
+}
+
+@InProceedings{wang2020cspnet,
+  author    = {Wang, Chien-Yao and Liao, Hong-Yuan Mark and Wu, Yueh-Hua and Chen, Ping-Yang and Hsieh, Jun-Wei and Yeh, I-Hau},
+  booktitle = {Proceedings of the IEEE/CVF conference on computer vision and pattern recognition workshops},
+  title     = {CSPNet: A new backbone that can enhance learning capability of CNN},
+  year      = {2020},
+  pages     = {390--391},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 % ------------------------------------------------------------------------

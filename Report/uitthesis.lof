@@ -10,7 +10,8 @@
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Hình ảnh minh họa RoI Pooling\relax }}{11}{figure.caption.10}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Kiến trúc của Faster R-CNN \textmd {}\relax }}{13}{figure.caption.11}%
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Hình ảnh minh họa kiến trúc RPN \textmd {(ảnh trích xuất từ bài báo Ren et al. \citep {ren2015faster})}\relax }}{14}{figure.caption.14}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces caption\relax }}{19}{figure.caption.20}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces So sánh hiệu suất của Yolov7 và các real-time detector khác \textmd {(Ảnh trích xuất từ bài báo \citep {wang2022yolov7})}\relax }}{20}{figure.caption.20}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Hình ảnh minh họa kiến trúc One-stage detector\relax }}{20}{figure.caption.21}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
