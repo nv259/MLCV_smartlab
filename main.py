@@ -10,7 +10,7 @@ import cv2
 app = Flask(__name__)
 webcam = Webcam()
 device_detector = YoloDetect(r'./yolov7/trained__pt/devices.pt')
-# human_detector = YoloDetect(r'./yolov7/trained__pt/human.pt')
+human_detector = YoloDetect(r'./yolov7/trained__pt/yolov7.pt')
 ccl = dict()
 ccr = dict()
 
@@ -24,17 +24,25 @@ def read_from_webcam(is_left):
     while True:
         # Read image from class Webcam
         image = webcam.get_frame(is_left)
+        count = count + 1
 
         if image is None:
             continue
 
-        # Detect using Yolov7
-        t1 = time.time()
-        img, ccl, ccr = device_detector.detect(image, is_left, count)
-        t2 = time.time()
+        if count % 2 == 0:
+            human_exist = human_detector.detect(image, is_human_detector=True)
+            print('Number of human in video: ', human_exist)
+
+            if not human_exist:
+                # Detect using Yolov7
+                t1 = time.time()
+                img, ccl, ccr = device_detector.detect(image, is_left, count)
+                print(ccl)
+                print(ccr)
+                t2 = time.time()
 
         #TODO: i think we should inference per 5 frames instead
-        img = cv2.resize(image, (1280, 720))
+        img = cv2.resize(image, (640, 480))
         img = cv2.imencode('.jpg', img)[1].tobytes()
 
         # Return image to web by yield cmd

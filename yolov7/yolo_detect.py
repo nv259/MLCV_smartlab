@@ -64,7 +64,7 @@ class YoloDetect():
         self.old_img_w = self.old_img_h = self.imgsz
         self.old_img_b = 1
 
-    def detect(self, im0s, is_left=True, count=0):
+    def detect(self, im0s, is_left=True, count=0, is_human_detector=False):
 
         t0 = time.time()
         # for path, img, im0s, vid_cap in dataset:
@@ -128,12 +128,16 @@ class YoloDetect():
                 # Rescale boxes from img_size to im0 size
                 det[:, :4] = scale_coords(img.shape[2:], det[:, :4], im0.shape).round()
 
-                # Print results
                 for c in det[:, -1].unique():
+                    if is_human_detector and self.names[int(c)] == 'person':
+                        return (det[:, -1] == c).sum()
+
                     n = (det[:, -1] == c).sum()  # detections per class
                     s += f"{n} {self.names[int(c)]}{'s' * (n > 1)}, "  # add to string
 
-                # Write results
+                if is_human_detector:
+                    return 0  # nobody in this frame
+
                 for *xyxy, conf, cls in reversed(det):
                     label = f'{self.names[int(cls)]} {conf:.2f}'
                     check = plot_one_box(xyxy, im0, label=label, color=self.colors[int(cls)], line_thickness=1,
